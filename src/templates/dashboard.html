@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - The Golden Hand</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="The Golden Hand Logo" class="w-12 h-12">
+                <h1 class="text-2xl font-semibold text-yellow-600">The Golden Hand</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-700" role="navigation" aria-label="Primary navigation">
+                <a href="{{ url_for('lessons.index') }}" class="hover:text-yellow-600 transition">Lessons</a>
+                <a href="{{ url_for('quiz.index') }}" class="hover:text-yellow-600 transition">Quiz</a>
+                <a href="{{ url_for('audio.index') }}" class="hover:text-yellow-600 transition">Audio</a>
+                <a href="{{ url_for('community.index') }}" class="hover:text-yellow-600 transition">Community</a>
+                <a href="{{ url_for('ai.index') }}" class="hover:text-yellow-600 transition">iKhaya AI</a>
+                <a href="{{ url_for('main.profile') }}" class="hover:text-yellow-600 transition">Profile</a>
+                <a href="{{ url_for('auth.logout') }}" class="hover:text-yellow-600 transition">Logout</a>
+            </nav>
+            <button type="button" id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-yellow-500" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl text-yellow-600"></i>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden" role="navigation" aria-label="Mobile navigation">
+            <a href="{{ url_for('lessons.index') }}" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Lessons</a>
+            <a href="{{ url_for('quiz.index') }}" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Quiz</a>
+            <a href="{{ url_for('audio.index') }}" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Audio</a>
+            <a href="{{ url_for('community.index') }}" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Community</a>
+            <a href="{{ url_for('ai.index') }}" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">iKhaya AI</a>
+            <a href="{{ url_for('main.profile') }}" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Profile</a>
+            <a href="{{ url_for('auth.logout') }}" class="block px-6 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Logout</a>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">Welcome, {{ current_user.first_name }}!</h2>
+            <div class="flex space-x-4">
+                <button id="contrast-toggle" class="p-2 bg-gray-200 rounded-full" title="Toggle high contrast mode">
+                    <i class="fas fa-adjust"></i>
+                </button>
+                <button id="text-size-toggle" class="p-2 bg-gray-200 rounded-full" title="Toggle large text mode">
+                    <i class="fas fa-text-height"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <!-- Progress Overview Card -->
+            <div class="dashboard-card col-span-1 md:col-span-2 lg:col-span-3">
+                <h3 class="text-xl font-semibold mb-4">Your Learning Journey</h3>
+                <div class="grid grid-cols-5 gap-4 text-center">
+                    <div>
+                        <div class="text-yellow-600 text-2xl mb-2">📚</div>
+                        <p class="font-medium">Lessons</p>
+                        <div class="progress-bar mt-2">
+                            <div class="progress-bar-fill" data-percentage="65"></div>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-1">65% Complete</p>
+                    </div>
+                    <div>
+                        <div class="text-yellow-600 text-2xl mb-2">🎯</div>
+                        <p class="font-medium">Quizzes</p>
+                        <div class="progress-bar mt-2">
+                            <div class="progress-bar-fill" data-percentage="42"></div>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-1">42% Complete</p>
+                    </div>
+                    <div>
+                        <div class="text-yellow-600 text-2xl mb-2">🔊</div>
+                        <p class="font-medium">Audio</p>
+                        <div class="progress-bar mt-2">
+                            <div class="progress-bar-fill" data-percentage="28"></div>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-1">28% Complete</p>
+                    </div>
+                    <div>
+                        <div class="text-yellow-600 text-2xl mb-2">👥</div>
+                        <p class="font-medium">Community</p>
+                        <div class="progress-bar mt-2">
+                            <div class="progress-bar-fill" data-percentage="50"></div>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-1">50% Complete</p>
+                    </div>
+                    <div>
+                        <div class="text-yellow-600 text-2xl mb-2">🎓</div>
+                        <p class="font-medium">iKhaya AI</p>
+                        <div class="progress-bar mt-2">
+                            <div class="progress-bar-fill" data-percentage="35"></div>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-1">35% Complete</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Lessons Card -->
+            <div class="dashboard-card">
+                <h3 class="text-xl font-semibold mb-4">Recent Lessons</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-book text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Introduction to Python</p>
+                            <p class="text-sm text-gray-600">Grade 10 • Programming</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-book text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Business Model Canvas</p>
+                            <p class="text-sm text-gray-600">Grade 11 • Entrepreneurship</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-book text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Web Development Basics</p>
+                            <p class="text-sm text-gray-600">Grade 10 • Web Technologies</p>
+                        </div>
+                    </li>
+                </ul>
+                <a href="{{ url_for('lessons.index') }}" class="block text-yellow-600 hover:text-yellow-700 mt-4 text-center">View All Lessons</a>
+            </div>
+
+            <!-- Quiz Performance Card -->
+            <div class="dashboard-card">
+                <h3 class="text-xl font-semibold mb-4">Quiz Performance</h3>
+                <div class="progress-chart" data-values="[85, 72, 90, 65, 78]" data-labels="['Python', 'Math', 'Business', 'Design', 'AI']">
+                    <canvas width="250" height="150"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-600 mt-2">Your recent quiz scores</p>
+                <a href="{{ url_for('quiz.index') }}" class="block text-yellow-600 hover:text-yellow-700 mt-4 text-center">Take a Quiz</a>
+            </div>
+
+            <!-- Startup Idea Generator Card -->
+            <div class="dashboard-card">
+                <h3 class="text-xl font-semibold mb-4">Startup Idea Generator</h3>
+                <div class="bg-gray-100 p-4 rounded-lg text-center mb-4">
+                    <p id="startup-idea" class="font-medium">Click the button to generate a startup idea</p>
+                </div>
+                <button onclick="generateStartupIdea()" class="w-full bg-yellow-600 text-white py-2 rounded-lg hover:bg-yellow-700 transition">Generate Idea</button>
+                <p class="text-center text-sm text-gray-600 mt-2">Spark your entrepreneurial journey</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Community Activity Card -->
+            <div class="dashboard-card">
+                <h3 class="text-xl font-semibold mb-4">Community Activity</h3>
+                <div class="space-y-4">
+                    <div class="community-post">
+                        <div class="flex justify-between">
+                            <p class="font-medium">Thabo M.</p>
+                            <p class="text-sm text-gray-600">2 hours ago</p>
+                        </div>
+                        <p class="text-sm mt-1">Looking for team members for my fintech startup idea. Anyone interested in mobile payment solutions?</p>
+                        <div class="flex space-x-4 mt-2">
+                            <span class="text-sm text-gray-600"><i class="far fa-comment"></i> 5 replies</span>
+                            <span class="text-sm text-gray-600"><i class="far fa-heart"></i> 12 likes</span>
+                        </div>
+                    </div>
+                    <div class="community-post">
+                        <div class="flex justify-between">
+                            <p class="font-medium">Nomsa K.</p>
+                            <p class="text-sm text-gray-600">5 hours ago</p>
+                        </div>
+                        <p class="text-sm mt-1">Just launched my first AI project! Check out my chatbot that helps students with math problems.</p>
+                        <div class="flex space-x-4 mt-2">
+                            <span class="text-sm text-gray-600"><i class="far fa-comment"></i> 8 replies</span>
+                            <span class="text-sm text-gray-600"><i class="far fa-heart"></i> 24 likes</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url_for('community.index') }}" class="block text-yellow-600 hover:text-yellow-700 mt-4 text-center">Join the Conversation</a>
+            </div>
+
+            <!-- Upcoming Events Card -->
+            <div class="dashboard-card">
+                <h3 class="text-xl font-semibold mb-4">Upcoming Events</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-calendar-alt text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">Startup Pitch Competition</p>
+                            <p class="text-sm text-gray-600">May 25, 2025 • 14:00-17:00</p>
+                            <p class="text-sm mt-1">Present your startup idea to potential investors and mentors.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                            <i class="fas fa-calendar-alt text-yellow-600"></i>
+                        </div>
+                        <div>
+                            <p class="font-medium">AI Workshop: Building Your First ML Model</p>
+                            <p class="text-sm text-gray-600">May 28, 2025 • 10:00-12:00</p>
+                            <p class="text-sm mt-1">Learn how to build and train your first machine learning model.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url_for('community.events') }}" class="block text-yellow-600 hover:text-yellow-700 mt-4 text-center">View All Events</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t mt-12">
+        <div class="max-w-7xl mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600 text-sm">© 2025 SIFISO SmartStudy SA. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-yellow-600"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-yellow-600"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-yellow-600"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-600 hover:text-yellow-600"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeDashboard();
+        });
+    </script>
+</body>
+</html>

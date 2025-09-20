@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Golden Hand</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <div class="min-h-screen flex flex-col items-center justify-center px-4">
+        <div class="w-full max-w-md">
+            <div class="text-center mb-8">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="The Golden Hand Logo" class="w-20 h-20 mx-auto">
+                <h1 class="text-3xl font-bold text-yellow-600 mt-4">The Golden Hand</h1>
+                <p class="text-gray-600 mt-2">Sign in to your account</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md p-8">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="mb-4 p-4 rounded-md {% if category == 'danger' %}bg-red-100 text-red-700{% elif category == 'success' %}bg-green-100 text-green-700{% else %}bg-blue-100 text-blue-700{% endif %}">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                
+                <form method="POST" action="{{ url_for('auth.login') }}">
+                    {{ form.hidden_tag() }}
+                    
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
+                        {{ form.email(class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500", placeholder="your.email@example.com") }}
+                        {% if form.email.errors %}
+                            <p class="text-red-600 text-sm mt-1">{{ form.email.errors[0] }}</p>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="password" class="block text-gray-700 text-sm font-medium mb-2">Password</label>
+                        {{ form.password(class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500", placeholder="••••••••") }}
+                        {% if form.password.errors %}
+                            <p class="text-red-600 text-sm mt-1">{{ form.password.errors[0] }}</p>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center">
+                            {{ form.remember_me(class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300 rounded") }}
+                            <label for="remember_me" class="ml-2 block text-sm text-gray-700">Remember me</label>
+                        </div>
+                        
+                        <a href="{{ url_for('auth.reset_password_request') }}" class="text-sm text-yellow-600 hover:text-yellow-700">Forgot your password?</a>
+                    </div>
+                    
+                    <div>
+                        {{ form.submit(class="w-full bg-yellow-600 text-white py-2 px-4 rounded-md hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 transition-colors") }}
+                    </div>
+                </form>
+            </div>
+            
+            <div class="text-center mt-6">
+                <p class="text-gray-600">Don't have an account? <a href="{{ url_for('auth.register') }}" class="text-yellow-600 hover:text-yellow-700 font-medium">Sign up</a></p>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="{{ url_for('main.index') }}" class="text-gray-600 hover:text-yellow-600 inline-flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

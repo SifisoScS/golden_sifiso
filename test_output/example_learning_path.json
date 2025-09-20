@@ -1,0 +1,517 @@
+{
+  "grade_level": 10,
+  "subjects": [
+    "mathematics",
+    "science",
+    "technology"
+  ],
+  "activities": [
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Advanced Algebra",
+      "difficulty": "beginner",
+      "title": "Advanced Algebra - Beginner Level",
+      "description": "Learn about Advanced Algebra at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Trigonometry",
+      "difficulty": "beginner",
+      "title": "Trigonometry - Beginner Level",
+      "description": "Learn about Trigonometry at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Probability",
+      "difficulty": "beginner",
+      "title": "Probability - Beginner Level",
+      "description": "Learn about Probability at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Financial Mathematics",
+      "difficulty": "beginner",
+      "title": "Financial Mathematics - Beginner Level",
+      "description": "Learn about Financial Mathematics at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Biology: Genetics and Evolution",
+      "difficulty": "beginner",
+      "title": "Biology: Genetics and Evolution - Beginner Level",
+      "description": "Learn about Biology: Genetics and Evolution at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Chemistry: Chemical Reactions",
+      "difficulty": "beginner",
+      "title": "Chemistry: Chemical Reactions - Beginner Level",
+      "description": "Learn about Chemistry: Chemical Reactions at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Physics: Energy",
+      "difficulty": "beginner",
+      "title": "Physics: Energy - Beginner Level",
+      "description": "Learn about Physics: Energy at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Environmental Science",
+      "difficulty": "beginner",
+      "title": "Environmental Science - Beginner Level",
+      "description": "Learn about Environmental Science at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Software Development",
+      "difficulty": "beginner",
+      "title": "Software Development - Beginner Level",
+      "description": "Learn about Software Development at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Full Stack Development",
+      "difficulty": "beginner",
+      "title": "Full Stack Development - Beginner Level",
+      "description": "Learn about Full Stack Development at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "Data Structures",
+      "difficulty": "beginner",
+      "title": "Data Structures - Beginner Level",
+      "description": "Learn about Data Structures at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "lesson",
+      "topic": "User Experience Design",
+      "difficulty": "beginner",
+      "title": "User Experience Design - Beginner Level",
+      "description": "Learn about User Experience Design at a beginner level",
+      "estimated_time_minutes": 30,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Advanced Algebra",
+      "difficulty": "beginner",
+      "title": "Advanced Algebra Practice",
+      "description": "Practice Advanced Algebra with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Trigonometry",
+      "difficulty": "beginner",
+      "title": "Trigonometry Practice",
+      "description": "Practice Trigonometry with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Probability",
+      "difficulty": "beginner",
+      "title": "Probability Practice",
+      "description": "Practice Probability with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Financial Mathematics",
+      "difficulty": "beginner",
+      "title": "Financial Mathematics Practice",
+      "description": "Practice Financial Mathematics with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "laboratory",
+      "topic": "Biology: Genetics and Evolution",
+      "difficulty": "beginner",
+      "title": "Biology: Genetics and Evolution Laboratory",
+      "description": "Conduct experiments related to Biology: Genetics and Evolution",
+      "estimated_time_minutes": 45,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Biology: Genetics and Evolution",
+      "difficulty": "beginner",
+      "title": "Biology: Genetics and Evolution Practice",
+      "description": "Practice Biology: Genetics and Evolution with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "laboratory",
+      "topic": "Chemistry: Chemical Reactions",
+      "difficulty": "beginner",
+      "title": "Chemistry: Chemical Reactions Laboratory",
+      "description": "Conduct experiments related to Chemistry: Chemical Reactions",
+      "estimated_time_minutes": 45,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Chemistry: Chemical Reactions",
+      "difficulty": "beginner",
+      "title": "Chemistry: Chemical Reactions Practice",
+      "description": "Practice Chemistry: Chemical Reactions with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "laboratory",
+      "topic": "Physics: Energy",
+      "difficulty": "beginner",
+      "title": "Physics: Energy Laboratory",
+      "description": "Conduct experiments related to Physics: Energy",
+      "estimated_time_minutes": 45,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Physics: Energy",
+      "difficulty": "beginner",
+      "title": "Physics: Energy Practice",
+      "description": "Practice Physics: Energy with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "laboratory",
+      "topic": "Environmental Science",
+      "difficulty": "beginner",
+      "title": "Environmental Science Laboratory",
+      "description": "Conduct experiments related to Environmental Science",
+      "estimated_time_minutes": 45,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Environmental Science",
+      "difficulty": "beginner",
+      "title": "Environmental Science Practice",
+      "description": "Practice Environmental Science with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "coding_practice",
+      "topic": "Software Development",
+      "difficulty": "beginner",
+      "title": "Software Development Coding Practice",
+      "description": "Apply your knowledge with hands-on coding related to Software Development",
+      "estimated_time_minutes": 45,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Software Development",
+      "difficulty": "beginner",
+      "title": "Software Development Practice",
+      "description": "Practice Software Development with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "coding_practice",
+      "topic": "Full Stack Development",
+      "difficulty": "beginner",
+      "title": "Full Stack Development Coding Practice",
+      "description": "Apply your knowledge with hands-on coding related to Full Stack Development",
+      "estimated_time_minutes": 45,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Full Stack Development",
+      "difficulty": "beginner",
+      "title": "Full Stack Development Practice",
+      "description": "Practice Full Stack Development with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "coding_practice",
+      "topic": "Data Structures",
+      "difficulty": "beginner",
+      "title": "Data Structures Coding Practice",
+      "description": "Apply your knowledge with hands-on coding related to Data Structures",
+      "estimated_time_minutes": 45,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "Data Structures",
+      "difficulty": "beginner",
+      "title": "Data Structures Practice",
+      "description": "Practice Data Structures with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "coding_practice",
+      "topic": "User Experience Design",
+      "difficulty": "beginner",
+      "title": "User Experience Design Coding Practice",
+      "description": "Apply your knowledge with hands-on coding related to User Experience Design",
+      "estimated_time_minutes": 45,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "exercise",
+      "topic": "User Experience Design",
+      "difficulty": "beginner",
+      "title": "User Experience Design Practice",
+      "description": "Practice User Experience Design with interactive exercises",
+      "estimated_time_minutes": 20,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Advanced Algebra",
+      "difficulty": "beginner",
+      "title": "Advanced Algebra Quiz",
+      "description": "Test your knowledge of Advanced Algebra",
+      "estimated_time_minutes": 15,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Trigonometry",
+      "difficulty": "beginner",
+      "title": "Trigonometry Quiz",
+      "description": "Test your knowledge of Trigonometry",
+      "estimated_time_minutes": 15,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Probability",
+      "difficulty": "beginner",
+      "title": "Probability Quiz",
+      "description": "Test your knowledge of Probability",
+      "estimated_time_minutes": 15,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Financial Mathematics",
+      "difficulty": "beginner",
+      "title": "Financial Mathematics Quiz",
+      "description": "Test your knowledge of Financial Mathematics",
+      "estimated_time_minutes": 15,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Biology: Genetics and Evolution",
+      "difficulty": "beginner",
+      "title": "Biology: Genetics and Evolution Quiz",
+      "description": "Test your knowledge of Biology: Genetics and Evolution",
+      "estimated_time_minutes": 15,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Chemistry: Chemical Reactions",
+      "difficulty": "beginner",
+      "title": "Chemistry: Chemical Reactions Quiz",
+      "description": "Test your knowledge of Chemistry: Chemical Reactions",
+      "estimated_time_minutes": 15,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Physics: Energy",
+      "difficulty": "beginner",
+      "title": "Physics: Energy Quiz",
+      "description": "Test your knowledge of Physics: Energy",
+      "estimated_time_minutes": 15,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Environmental Science",
+      "difficulty": "beginner",
+      "title": "Environmental Science Quiz",
+      "description": "Test your knowledge of Environmental Science",
+      "estimated_time_minutes": 15,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Software Development",
+      "difficulty": "beginner",
+      "title": "Software Development Quiz",
+      "description": "Test your knowledge of Software Development",
+      "estimated_time_minutes": 15,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Full Stack Development",
+      "difficulty": "beginner",
+      "title": "Full Stack Development Quiz",
+      "description": "Test your knowledge of Full Stack Development",
+      "estimated_time_minutes": 15,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "Data Structures",
+      "difficulty": "beginner",
+      "title": "Data Structures Quiz",
+      "description": "Test your knowledge of Data Structures",
+      "estimated_time_minutes": 15,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "quiz",
+      "topic": "User Experience Design",
+      "difficulty": "beginner",
+      "title": "User Experience Design Quiz",
+      "description": "Test your knowledge of User Experience Design",
+      "estimated_time_minutes": 15,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "project",
+      "topic": "Mathematics Integration",
+      "difficulty": "intermediate",
+      "title": "Grade 10 Mathematics Project",
+      "description": "Apply all the mathematics concepts you've learned in a real-world project",
+      "estimated_time_minutes": 60,
+      "subject": "mathematics"
+    },
+    {
+      "type": "activity",
+      "content_type": "project",
+      "topic": "Science Integration",
+      "difficulty": "intermediate",
+      "title": "Grade 10 Science Project",
+      "description": "Apply scientific concepts you've learned in a real-world project",
+      "estimated_time_minutes": 90,
+      "subject": "science"
+    },
+    {
+      "type": "activity",
+      "content_type": "project",
+      "topic": "Technology Integration",
+      "difficulty": "intermediate",
+      "title": "Grade 10 Technology Project",
+      "description": "Apply technology concepts you've learned to build a real-world solution",
+      "estimated_time_minutes": 120,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "startup_simulation",
+      "topic": "Tech Entrepreneurship",
+      "difficulty": "intermediate",
+      "title": "Tech Startup Simulation",
+      "description": "Simulate launching a technology startup based on the skills you've learned",
+      "estimated_time_minutes": 90,
+      "subject": "technology"
+    },
+    {
+      "type": "activity",
+      "content_type": "interdisciplinary_project",
+      "subjects": [
+        "mathematics",
+        "science",
+        "technology"
+      ],
+      "difficulty": "intermediate",
+      "title": "Interdisciplinary Project: Data-Driven Solution",
+      "description": "Apply concepts from multiple subjects to solve a real-world problem: Use mathematical analysis and technology implementation to create a data-driven application.",
+      "estimated_time_minutes": 180
+    },
+    {
+      "type": "activity",
+      "content_type": "entrepreneurship_challenge",
+      "subjects": [
+        "mathematics",
+        "science",
+        "technology"
+      ],
+      "difficulty": "intermediate",
+      "title": "Entrepreneurship Challenge: From Knowledge to Business",
+      "description": "Develop a business idea that leverages your knowledge across multiple subjects to solve a real problem in your community.",
+      "estimated_time_minutes": 120
+    }
+  ],
+  "estimated_duration_days": 12
+}

@@ -1,0 +1,26 @@
+{
+  "question": "How can I use technology skills to start a business?",
+  "answer": "I'm not sure about the answer to this specific mathematics question. Could you provide more details or rephrase it?",
+  "confidence": 0.3,
+  "agent": "Mathematics Navigator",
+  "all_responses": [
+    {
+      "agent_id": "math_agent",
+      "agent_name": "Mathematics Navigator",
+      "answer": "I'm not sure about the answer to this specific mathematics question. Could you provide more details or rephrase it?",
+      "confidence": 0.3
+    },
+    {
+      "agent_id": "science_agent",
+      "agent_name": "Science Illuminator",
+      "answer": "I'm not sure about the answer to this specific science question. Could you provide more details or rephrase it?",
+      "confidence": 0.3
+    },
+    {
+      "agent_id": "tech_agent",
+      "agent_name": "Technology Architect",
+      "answer": "I'm not sure about the answer to this specific technology question. Could you provide more details or rephrase it?",
+      "confidence": 0.3
+    }
+  ]
+}

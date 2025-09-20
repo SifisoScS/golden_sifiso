@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Hand - SIFISO SmartStudy SA</title>
+    <meta name="description" content="SIFISO SmartStudy SA - Reimagining African education through a holistic, AI-powered learning platform.">
+    <meta name="keywords" content="Education, Africa, SmartStudy, AI Learning, Digital Literacy, Youth Empowerment">
+    <meta name="author" content="Sifiso Ndlovu">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo of The Golden Hand, a stylized golden hand icon representing education and empowerment" class="w-12 h-12">
+                <h1 class="text-2xl font-semibold text-yellow-600">The Golden Hand</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-700" role="navigation" aria-label="Primary navigation">
+                <a href="#vision" class="hover:text-yellow-600 transition">The Vision</a>
+                <a href="#structure" class="hover:text-yellow-600 transition">The Structure</a>
+                <a href="#journey" class="hover:text-yellow-600 transition">The Learner's Journey</a>
+                <a href="#accessibility" class="hover:text-yellow-600 transition">Accessibility</a>
+                <a href="#opportunity" class="hover:text-yellow-600 transition">The Opportunity</a>
+                <a href="{{ url_for('auth.login') }}" class="hover:text-yellow-600 transition">Login</a>
+                <a href="{{ url_for('auth.register') }}" class="hover:text-yellow-600 transition">Register</a>
+            </nav>
+            <button type="button" id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-yellow-500" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl text-yellow-600"></i>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden" role="navigation" aria-label="Mobile navigation">
+            <a href="#vision" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">The Vision</a>
+            <a href="#structure" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">The Structure</a>
+            <a href="#journey" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">The Learner's Journey</a>
+            <a href="#accessibility" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Accessibility</a>
+            <a href="#opportunity" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">The Opportunity</a>
+            <a href="{{ url_for('auth.login') }}" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Login</a>
+            <a href="{{ url_for('auth.register') }}" class="block px-6 py-3 text-gray-700 hover:bg-yellow-50 hover:text-yellow-600">Register</a>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-20">
+        <section id="vision" class="space-y-6">
+            <h2 class="text-3xl font-extrabold text-yellow-600">1. The Vision — Reimagining Education for Africa's Future</h2>
+            <p class="text-lg leading-relaxed text-gray-800">
+                SIFISO SmartStudy SA is a bold reimagination of what education can be in a modern African context — built not just to teach, but to empower, inspire, and equip learners with the mindset and tools to lead. At its core, SmartStudy SA envisions a digitally fluent, AI-ready generation that doesn't wait for opportunities, but creates them. We believe Africa doesn't need to catch up — it needs to leap forward. That's why we built a system that nurtures learners not as workers of tomorrow, but as creators of tomorrow's systems.
+            </p>
+            <img src="{{ url_for('static', filename='images/vision.jpg') }}" alt="African students engaged in digital learning with tablets and computers in a modern classroom setting, bright and inspiring environment" class="w-full rounded-lg shadow-lg">
+            <div class="pt-4">
+                <a href="#opportunity" class="inline-block rounded bg-yellow-600 px-6 py-3 text-white font-semibold hover:bg-yellow-700 transition">Join the Movement</a>
+            </div>
+        </section>
+
+        <section id="structure" class="space-y-6">
+            <h2 class="text-3xl font-extrabold text-yellow-600">2. The Structure — The Golden Hand Learning Model</h2>
+            <p class="text-lg leading-relaxed text-gray-800">
+                Our platform is designed around "The Golden Hand", a unique five-app structure that mirrors the fingers of a hand — each one an essential function of holistic learning:
+            </p>
+            <ul class="list-none space-y-4 text-gray-800 text-lg">
+                <li class="flex items-center space-x-3">
+                    <span class="text-yellow-600 text-2xl">📚</span>
+                    <span>Lessons Platform (Grades 1–12 & Tertiary) for structured, curriculum-aligned education.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <span class="text-yellow-600 text-2xl">🎯</span>
+                    <span>Quiz App for gamified, critical thinking-based mastery.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <span class="text-yellow-600 text-2xl">🔊</span>
+                    <span>Audio Learning for accessible offline education by subject and grade.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <span class="text-yellow-600 text-2xl">👥</span>
+                    <span>SISONKE - The community hub focusing on mentorship, peer support, collaboration, and the vision of South Africa creating 1 million startups by the end of 2026.</span>
+                </li>
+                <li class="flex items-center space-x-3">
+                    <span class="text-yellow-600 text-2xl">🎓</span>
+                    <span>iKhaya AI — our flagship innovation — a homegrown African AI hub where learners don't just use AI, they build with it.</span>
+                </li>
+            </ul>
+            <div class="grid grid-cols-1 sm:grid-cols-5 gap-6 mt-8">
+                <div class="flex flex-col items-center space-y-2">
+                    <img src="{{ url_for('static', filename='images/lessons.jpg') }}" alt="Icon representing Lessons Platform with books and digital tablet, symbolizing structured curriculum learning" class="rounded-full shadow-md w-24 h-24 object-cover">
+                    <span class="text-center text-sm font-semibold text-gray-700">Lessons Platform</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <img src="{{ url_for('static', filename='images/quiz.jpg') }}" alt="Icon representing Quiz App with target and dart, symbolizing gamified critical thinking mastery" class="rounded-full shadow-md w-24 h-24 object-cover">
+                    <span class="text-center text-sm font-semibold text-gray-700">Quiz App</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <img src="{{ url_for('static', filename='images/audio.jpg') }}" alt="Icon representing Audio Learning with headphones and sound waves, symbolizing accessible offline education" class="rounded-full shadow-md w-24 h-24 object-cover">
+                    <span class="text-center text-sm font-semibold text-gray-700">Audio Learning</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <img src="{{ url_for('static', filename='images/community.jpg') }}" alt="African community members collaborating and mentoring each other in a vibrant, supportive environment symbolizing SISONKE community hub" class="rounded-full shadow-md w-24 h-24 object-cover">
+                    <span class="text-center text-sm font-semibold text-gray-700">SISONKE Community</span>
+                </div>
+                <div class="flex flex-col items-center space-y-2">
+                    <img src="{{ url_for('static', filename='images/ai.jpg') }}" alt="Icon representing iKhaya AI with AI brain and African continent, symbolizing homegrown African AI innovation" class="rounded-full shadow-md w-24 h-24 object-cover">
+                    <span class="text-center text-sm font-semibold text-gray-700">iKhaya AI</span>
+                </div>
+            </div>
+            <div class="pt-4">
+                <a href="{{ url_for('auth.register') }}" class="inline-block rounded bg-yellow-600 px-6 py-3 text-white font-semibold hover:bg-yellow-700 transition">Register Your School or Organization</a>
+            </div>
+        </section>
+
+        <section id="journey" class="space-y-6">
+            <h2 class="text-3xl font-extrabold text-yellow-600">3. The Learner's Journey — From Curiosity to Entrepreneurship</h2>
+            <p class="text-lg leading-relaxed text-gray-800">
+                SmartStudy SA offers an educational journey that starts from foundational learning in Grade 1, gradually layering on digital fluency, programming, and real-world problem-solving, leading all the way to AI project development and startup thinking in Grade 12. Learners don't just write exams — they write code, launch ideas, and build portfolios. By the time they leave our platform, they've been guided through building websites, analyzing data, training AI models, and pitching real-world startups. This is not about marks — it's about mindsets.
+            </p>
+            <img src="{{ url_for('static', filename='images/journey.jpg') }}" alt="African learner progressing through digital education stages from grade 1 to grade 12 and entrepreneurship, showing growth and empowerment" class="w-full rounded-lg shadow-lg">
+            <div class="pt-4">
+                <a href="{{ url_for('auth.register') }}" class="inline-block rounded bg-yellow-600 px-6 py-3 text-white font-semibold hover:bg-yellow-700 transition">Get Early Access</a>
+            </div>
+        </section>
+
+        <section id="accessibility" class="space-y-6">
+            <h2 class="text-3xl font-extrabold text-yellow-600">4. Accessibility and African Identity</h2>
+            <p class="text-lg leading-relaxed text-gray-800">
+                We know that true transformation begins with inclusion. Our platform is built with offline capabilities, low-data options, and multilingual support (English, isiZulu, Sesotho, and more), ensuring every learner, no matter where they live or what language they speak, has a seat at the table. Every design, every lesson, and every innovation proudly reflects an African identity — because we're not building a Silicon Valley clone, we're building a uniquely African future.
+            </p>
+            <img src="{{ url_for('static', filename='images/accessibility.jpg') }}" alt="African children learning with tablets in rural and urban settings showing inclusion, diversity, and African identity in education" class="w-full rounded-lg shadow-lg">
+            <div class="pt-4">
+                <a href="#opportunity" class="inline-block rounded bg-yellow-600 px-6 py-3 text-white font-semibold hover:bg-yellow-700 transition">Donate or Partner</a>
+            </div>
+        </section>
+
+        <section id="opportunity" class="space-y-6">
+            <h2 class="text-3xl font-extrabold text-yellow-600">5. The Opportunity — Backing the Mindset Revolution</h2>
+            <p class="text-lg leading-relaxed text-gray-800">
+                SIFISO SmartStudy SA is not just an edtech product — it's a movement. An opportunity to back a system that doesn't just scale education, but unlocks a generation of thinkers, builders, and leaders. With your investment, we're not only accelerating the platform's reach — we're rewriting Africa's educational narrative. From the dusty classrooms of rural KwaZulu-Natal to the ambitious minds of inner-city Johannesburg, this is our promise: When Africa educates on its own terms, the world takes notice.
+            </p>
+            <img src="{{ url_for('static', filename='images/opportunity.jpg') }}" alt="African entrepreneurs and students collaborating in a modern startup environment, symbolizing innovation and mindset revolution" class="w-full rounded-lg shadow-lg">
+            <div class="pt-4">
+                <a href="{{ url_for('auth.register') }}" class="inline-block rounded bg-yellow-600 px-6 py-3 text-white font-semibold hover:bg-yellow-700 transition">Join the Movement</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t mt-20">
+        <div class="max-w-5xl mx-auto px-6 py-8 text-center text-gray-600 text-sm">
+            © 2025 SIFISO SmartStudy SA. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

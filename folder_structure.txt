@@ -1,0 +1,27 @@
+```
+specialized_agents/
+├── __init__.py                     # Package initialization
+├── base_agent.py                   # Base agent interface
+├── agent_registry.py               # Registry for managing agents
+├── agent_factory.py                # Factory for creating agent instances
+├── agent_integrator.py             # Orchestration layer for agent coordination
+├── integrate_with_orchestration.py # Integration with main Flask application
+├── mathematics_navigator/          # Mathematics agent implementation
+│   └── math_agent.py               # Mathematics specialized agent
+├── science_illuminator/            # Science agent implementation
+│   └── science_agent.py            # Science specialized agent
+├── technology_architect/           # Technology agent implementation
+│   └── tech_agent.py               # Technology specialized agent
+├── test_agents.py                  # Test script for all agent functionality
+├── README.md                       # Module documentation
+└── todo.md                         # Development checklist
+
+test_output/                        # Test results and examples
+├── example_learning_path.json      # Sample generated learning path
+├── example_lesson_content.json     # Sample generated lesson content
+├── example_performance_analysis.json # Sample performance analysis
+├── example_question_answer.json    # Sample question answering
+├── example_resources.json          # Sample resource suggestions
+├── example_entrepreneurship_connection.json # Sample entrepreneurship connections
+└── test_results.txt                # Test execution results
+```

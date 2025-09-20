@@ -1,0 +1,96 @@
+```
+golden_hand/                                # Root project directory
+├── .gitignore                              # Git ignore file
+├── README.md                               # Project documentation
+├── create_db.py                            # Database creation script
+├── create_test_users.py                    # Test user creation script
+├── requirements.txt                        # Python dependencies
+├── todo.md                                 # Project todo list
+├── golden_hand.db                          # SQLite database
+│
+├── src/                                    # Source code directory
+│   ├── main.py                             # Main application entry point
+│   │
+│   ├── models/                             # Database models
+│   │   ├── user.py                         # User model
+│   │   ├── lesson.py                       # Lesson model
+│   │   ├── quiz.py                         # Quiz model
+│   │   ├── audio.py                        # Audio learning model
+│   │   ├── community.py                    # Community hub model
+│   │   └── ai.py                           # iKhaya AI model
+│   │
+│   ├── routes/                             # Application routes
+│   │   ├── main.py                         # Main routes
+│   │   ├── auth.py                         # Authentication routes
+│   │   ├── lessons.py                      # Lessons platform routes
+│   │   ├── quiz.py                         # Quiz app routes
+│   │   ├── audio.py                        # Audio learning routes
+│   │   ├── community.py                    # Community hub routes
+│   │   └── ai.py                           # iKhaya AI routes
+│   │
+│   ├── specialized_agents/                 # Specialized agents module
+│   │   ├── __init__.py                     # Package initialization
+│   │   ├── base_agent.py                   # Base agent interface
+│   │   ├── agent_registry.py               # Registry for managing agents
+│   │   ├── agent_factory.py                # Factory for creating agent instances
+│   │   ├── agent_integrator.py             # Orchestration layer
+│   │   ├── integrate_with_orchestration.py # Integration with main app
+│   │   ├── README.md                       # Module documentation
+│   │   ├── todo.md                         # Module todo list
+│   │   ├── test_agents.py                  # Test script
+│   │   │
+│   │   ├── mathematics_navigator/          # Mathematics agent
+│   │   │   └── math_agent.py               # Mathematics agent implementation
+│   │   │
+│   │   ├── science_illuminator/            # Science agent
+│   │   │   └── science_agent.py            # Science agent implementation
+│   │   │
+│   │   └── technology_architect/           # Technology agent
+│   │       └── tech_agent.py               # Technology agent implementation
+│   │
+│   ├── static/                             # Static assets
+│   │   ├── css/                            # CSS stylesheets
+│   │   │   └── style.css                   # Main stylesheet
+│   │   │
+│   │   ├── js/                             # JavaScript files
+│   │   │   └── main.js                     # Main JavaScript file
+│   │   │
+│   │   └── images/                         # Image assets
+│   │       ├── logo.png                    # Application logo
+│   │       ├── vision.jpg                  # Vision section image
+│   │       ├── lessons.jpg                 # Lessons platform image
+│   │       ├── quiz.jpg                    # Quiz app image
+│   │       ├── audio.jpg                   # Audio learning image
+│   │       ├── community.jpg               # Community hub image
+│   │       ├── ai.jpg                      # iKhaya AI image
+│   │       ├── journey.jpg                 # Learner's journey image
+│   │       ├── opportunity.jpg             # Opportunity section image
+│   │       └── accessibility.jpg           # Accessibility features image
+│   │
+│   └── templates/                          # HTML templates
+│       ├── index.html                      # Landing page
+│       ├── dashboard.html                  # User dashboard
+│       │
+│       ├── auth/                           # Authentication templates
+│       │   ├── login.html                  # Login page
+│       │   └── register.html               # Registration page
+│       │
+│       ├── lessons/                        # Lessons platform templates
+│       ├── quiz/                           # Quiz app templates
+│       ├── audio/                          # Audio learning templates
+│       ├── community/                      # Community hub templates
+│       ├── ai/                             # iKhaya AI templates
+│       │
+│       └── errors/                         # Error pages
+│           ├── 404.html                    # Not found page
+│           └── 500.html                    # Server error page
+│
+└── test_output/                            # Test results directory
+    ├── test_results.txt                    # Test execution results
+    ├── example_learning_path.json          # Sample learning path
+    ├── example_lesson_content.json         # Sample lesson content
+    ├── example_performance_analysis.json   # Sample performance analysis
+    ├── example_question_answer.json        # Sample question answering
+    ├── example_resources.json              # Sample resource suggestions
+    └── example_entrepreneurship_connection.json # Sample entrepreneurship connections
+```

@@ -1,0 +1,94 @@
+{
+  "student_id": 1,
+  "topic": "Python Programming",
+  "activity_type": "coding_practice",
+  "score": 85,
+  "max_score": 100,
+  "percentage": 85.0,
+  "performance_level": "Good",
+  "strengths": [
+    "Not enough data to determine specific strengths"
+  ],
+  "weaknesses": [
+    "Not enough data to determine specific weaknesses"
+  ],
+  "feedback": "You scored 85.0% on this coding_practice. Good.",
+  "next_steps": [
+    "Review specific areas of difficulty",
+    "Practice with more complex examples"
+  ],
+  "recommended_resources": [
+    {
+      "title": "freeCodeCamp",
+      "description": "Free interactive coding lessons on Python Programming",
+      "url": "https://www.freecodecamp.org/",
+      "type": "interactive",
+      "difficulty": "beginner"
+    },
+    {
+      "title": "W3Schools",
+      "description": "Web development tutorials and references",
+      "url": "https://www.w3schools.com/",
+      "type": "tutorial",
+      "difficulty": "intermediate"
+    },
+    {
+      "title": "GitHub Learning Lab",
+      "description": "Interactive courses on coding and development",
+      "url": "https://lab.github.com/",
+      "type": "interactive",
+      "difficulty": "intermediate"
+    },
+    {
+      "title": "Tech Entrepreneurship",
+      "description": "Learn how to build a tech startup",
+      "url": "#",
+      "type": "course",
+      "difficulty": "intermediate"
+    },
+    {
+      "title": "South African Python Programming Community",
+      "description": "Connect with local developers and entrepreneurs interested in Python Programming",
+      "url": "#",
+      "type": "community",
+      "difficulty": "intermediate"
+    },
+    {
+      "title": "From Code to Company: Building a Python Programming Startup",
+      "description": "Learn how to turn your Python Programming skills into a viable business",
+      "url": "#",
+      "type": "course",
+      "difficulty": "intermediate",
+      "tags": [
+        "entrepreneurship",
+        "startup",
+        "business"
+      ]
+    }
+  ],
+  "coding_skills": {
+    "code_quality": 4,
+    "problem_solving": 3,
+    "efficiency": 4,
+    "documentation": 3,
+    "overall": 3.5,
+    "feedback": "Your code is well-structured and efficient. Work on improving documentation and problem-solving approaches."
+  },
+  "entrepreneurship_connection": {
+    "description": "Programming skills are the foundation for creating software solutions to various problems.",
+    "business_applications": [
+      "Developing custom software for businesses",
+      "Creating automation tools",
+      "Building data analysis solutions"
+    ],
+    "startup_ideas": [
+      "Software development consultancy",
+      "Industry-specific software solution",
+      "Educational programming platform for African students"
+    ],
+    "case_study": "How a self-taught programmer from Durban built a software company that now employs 25 people and serves clients across Africa.",
+    "grade_context": "With these advanced technology skills, you're equipped to develop professional-quality solutions that could form the basis of a real startup.",
+    "topic": "Python Programming",
+    "grade_level": 10
+  }
+}

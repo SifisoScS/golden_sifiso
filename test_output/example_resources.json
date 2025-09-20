@@ -1,0 +1,56 @@
+[
+  {
+    "title": "freeCodeCamp",
+    "description": "Free interactive coding lessons on Programming",
+    "url": "https://www.freecodecamp.org/",
+    "type": "interactive",
+    "difficulty": "beginner"
+  },
+  {
+    "title": "W3Schools",
+    "description": "Web development tutorials and references",
+    "url": "https://www.w3schools.com/",
+    "type": "tutorial",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "GitHub Learning Lab",
+    "description": "Interactive courses on coding and development",
+    "url": "https://lab.github.com/",
+    "type": "interactive",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Tech Entrepreneurship",
+    "description": "Learn how to build a tech startup",
+    "url": "#",
+    "type": "course",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Visual Tech Tutorials",
+    "description": "Visual explanations of Programming with diagrams and videos",
+    "url": "#",
+    "type": "video",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "South African Programming Community",
+    "description": "Connect with local developers and entrepreneurs interested in Programming",
+    "url": "#",
+    "type": "community",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "From Code to Company: Building a Programming Startup",
+    "description": "Learn how to turn your Programming skills into a viable business",
+    "url": "#",
+    "type": "course",
+    "difficulty": "intermediate",
+    "tags": [
+      "entrepreneurship",
+      "startup",
+      "business"
+    ]
+  }
+]
